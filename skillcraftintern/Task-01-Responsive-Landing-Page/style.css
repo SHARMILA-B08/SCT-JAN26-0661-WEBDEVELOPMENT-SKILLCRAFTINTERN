@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  transition: 0.4s;
+  z-index: 1000;
+}
+
+header.scrolled {
+  background: #111;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: cyan;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(120deg,#667eea,#764ba2);
+  color: white;
+  padding-top: 80px;
+}
+
+.hero img {
+  width: 320px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: cyan;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.dark {
+  background: #f4f4f4;
+}
+
+.about-box, .contact-box {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-box img, .contact-box img {
+  width: 160px;
+  border-radius: 50%;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stats h3 {
+  font-size: 40px;
+  color: #667eea;
+}
+
+/* CONTACT FORM */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+form input, textarea {
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+form button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}

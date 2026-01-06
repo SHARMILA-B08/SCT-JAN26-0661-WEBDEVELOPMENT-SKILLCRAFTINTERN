@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professional To-Do Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>🗂 Task Manager</h1>
+    <p>Organize your professional workflow</p>
+  </header>
+
+  <!-- ADD TASK -->
+  <div class="add-task">
+    <input id="taskInput" placeholder="Enter task description">
+    <select id="category">
+      <option>Work</option>
+      <option>Personal</option>
+      <option>Study</option>
+    </select>
+    <select id="priority">
+      <option>High</option>
+      <option>Medium</option>
+      <option>Low</option>
+    </select>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <!-- TASK LIST -->
+  <div class="task-list" id="taskList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
